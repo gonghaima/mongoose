@@ -1,5 +1,5 @@
 {
-  "name": "2",
+  "name": "55",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "mongoose": "^5.0.9",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5",
     "swig": "^1.4.2"
