@@ -34,6 +34,12 @@
         <p class="lead">Use this form to enter your daily meeting notes...</p>
     </div>
 
+    {% if message.length > 0 %}
+    <div class="alert alert-danger alert-error">
+        {{ message }}
+    </div>
+    {% endif %}
+
     <form class="form-horizontal" action="newnote" method="post">
         <fieldset>
 

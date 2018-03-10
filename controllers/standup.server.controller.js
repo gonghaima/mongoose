@@ -33,7 +33,10 @@ exports.create = function (req, res) {
         impediment: req.body.impediment
     });
 
-    console.log('entry:', entry);
+    // validate now... works but not ideal, better off define validation rules in schema
+    // entry.schema.path('memberName').validate(function (value) {
+    //     return value != 'None';
+    // }, 'You must select a team member name.');
 
     // entry.save();
     entry.save(function (err) {
