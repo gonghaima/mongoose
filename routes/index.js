@@ -8,6 +8,12 @@ router.get('/', function(req, res, next) {
   return standupCtrl.list(req, res);
 });
 
+/* POST filter by member name - home page.  */
+router.post('/', function(req, res, next) {
+  // res.render('index', { title: 'Express' });
+  return standupCtrl.filterByMember(req, res);
+});
+
 /* GET New Note page. */
 router.get('/newnote', function(req, res) {
   return standupCtrl.getNote(req, res);
